@@ -65,6 +65,23 @@ public class WeatherApp extends JFrame {
         temperatureText.setHorizontalAlignment((SwingConstants.CENTER));
         add(temperatureText);
 
+        // weather condition description
+        JLabel weatherConditionDesc = new JLabel("Cloudy");
+        weatherConditionDesc.setBounds(0,405, 450, 36);
+        weatherConditionDesc.setHorizontalAlignment(SwingConstants.CENTER);
+        add(weatherConditionDesc);
+
+        // humidity image
+        JLabel humidityImage = new JLabel(loadImage("src/assets/humidity.png"));
+        humidityImage.setBounds(15,500, 74, 66);
+        add(humidityImage);
+
+        //humidity text
+        JLabel humidityText = new JLabel("<html><b>Humidity</b> 100%</html>");
+        humidityText.setBounds(90,500,85,55);
+        humidityText.setFont(new Font("Dialog", Font.PLAIN, 16));
+        add(humidityText);
+
     }
 
     // used to create images on GUI component
